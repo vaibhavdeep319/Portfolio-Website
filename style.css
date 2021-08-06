@@ -325,7 +325,7 @@ body {
   opacity: 0.6;
 }
 .projects .container .main_box .box .links a {
-  color: var(--light-color);
+  color: var(--color);
   text-decoration: none;
   margin-right: 0.4em;
   transition: all 0.4s;
@@ -367,8 +367,15 @@ body {
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
-  
+  display: none; 
+}
+
+.slides-img{
+  width: 40%;
+}
+
+.slides-img2{
+  width: 50%;
 }
 
 .slide-description
@@ -467,6 +474,27 @@ body {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+
+.links2 a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  margin-right: 0.4em;
+  transition: all 0.4s;
+  font-weight: 300;
+}
+.links2 a i {
+  color: var(--secondary-color);
+  margin-left: 0.4em;
+  transition: all 0.4s;
+}
+.links2 a:hover {
+  color: #a434eb;
+}
+.links2 a:hover i {
+  transform: translateX(0.2em);
+  color: #a434eb;
 }
 
 
@@ -616,6 +644,7 @@ footer .social_media_icons a:hover i{
     width: 20em;
     height: 20em;
   }
+
   .projects .container .main_box .icon{
     height: 100%;
     padding: 0.2em;
@@ -626,6 +655,12 @@ footer .social_media_icons a:hover i{
     height: 100%;
     padding: 2em 0.2em;
   }
+ .mySlides .slides-img{
+   width: 100%;
+ }
+ .mySlides .slide-description{
+   width: 100%;
+ }
 }
 
 @media (max-width: 350px) {
